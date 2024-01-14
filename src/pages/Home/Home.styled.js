@@ -9,7 +9,6 @@ export const Hero = styled.section`
 
 export const HeroContainer = styled.div`
     position: relative;
-    /* display: grid; */
     max-width: 1376px;
     max-height: 736px;
     margin: 0 auto;
@@ -64,28 +63,28 @@ export const HeroSvg = styled.svg`
 `;
 
 export const HeroInfoBlock = styled.div`
-position: absolute;
-bottom: 50px;
-right: 50px;
-display: flex;
-gap: 16px;
-justify-content: center;
-align-items: center;
-width: 284px;
-height: 118px;
-padding: 32px;
-border-radius: 20px;
-background-color: var(--color-background-hero-and-icon);
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 284px;
+    height: 118px;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: var(--color-background-hero-and-icon);
 `;
 
 export const HeroInfoBlockSvgWrap = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-width: 54px;
-height: 54px;
-border-radius: 13px;
-background: var( --color-background-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 13px;
+    background: var( --color-background-accent);
 `;
 
 
@@ -94,6 +93,7 @@ margin-bottom: 6px;
 color: var(--color-text-grey);
 font-size: 16px;
 line-height: normal;
+letter-spacing: -0.3px;
 `;
 
 export const HeroInfoBlockNumber = styled.p`

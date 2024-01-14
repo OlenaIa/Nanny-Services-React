@@ -1,18 +1,40 @@
-import { NavLink } from "react-router-dom";
-
+import {
+    HeaderSection,
+    HeaderContainer,
+    HeaderTitles,
+    HeaderNav,
+    NavLinkStyled,
+    HeaderLeftBlock,
+    UserBlock,
+    UserSvgWrap,
+    UserSvg,
+    UserName,
+    LogOutButton
+} from "./Header.styled";
+import sprite from '../../assets/sprite.svg';
 
 export const Header = () => {
     return (
-        <section>
-            <div>
-                <header>
-                    <nav>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/nannies">Nannies</NavLink>
-                        <NavLink to="/favorites">Favorites</NavLink>
-                    </nav>
-                </header>
-            </div>
-        </section>
+        <HeaderSection>
+            <HeaderContainer>
+                <HeaderTitles>Nanny.Services</HeaderTitles>
+                <HeaderNav>
+                        <NavLinkStyled to="/">Home</NavLinkStyled>
+                        <NavLinkStyled to="/nannies">Nannies</NavLinkStyled>
+                        <NavLinkStyled to="/favorites">Favorites</NavLinkStyled>
+                </HeaderNav>
+                <HeaderLeftBlock>
+                    <UserBlock>
+                        <UserSvgWrap>
+                            <UserSvg>
+                                <use href={`${sprite}#icon-user`} />
+                            </UserSvg>
+                        </UserSvgWrap>
+                            <UserName>Ilona</UserName>
+                    </UserBlock>
+                        <LogOutButton>Log out</LogOutButton>
+                </HeaderLeftBlock>
+            </HeaderContainer>
+        </HeaderSection>
     )
 };
