@@ -1,39 +1,18 @@
 import {
     HeaderSection,
     HeaderContainer,
-    HeaderTitles,
-    HeaderNav,
-    NavLinkStyled,
-    HeaderLeftBlock,
-    UserBlock,
-    UserSvgWrap,
-    UserSvg,
-    UserName,
-    LogOutButton
 } from "./Header.styled";
-import sprite from '../../assets/sprite.svg';
+import { HeaderTitle } from "components/HeaderTitle/HeaderTitle";
+import { Navigation } from "components/Navigation/Navigation";
+import { HeaderLeftBlock } from "components/HeaderLeftBlock/HeaderLeftBlock";
 
-export const Header = () => {
+export const Header = ({homepage}) => {
     return (
-        <HeaderSection>
+        <HeaderSection $homepage={homepage}>
             <HeaderContainer>
-                <HeaderTitles>Nanny.Services</HeaderTitles>
-                <HeaderNav>
-                        <NavLinkStyled to="/">Home</NavLinkStyled>
-                        <NavLinkStyled to="/nannies">Nannies</NavLinkStyled>
-                        <NavLinkStyled to="/favorites">Favorites</NavLinkStyled>
-                </HeaderNav>
-                <HeaderLeftBlock>
-                    <UserBlock>
-                        <UserSvgWrap>
-                            <UserSvg>
-                                <use href={`${sprite}#icon-user`} />
-                            </UserSvg>
-                        </UserSvgWrap>
-                            <UserName>Ilona</UserName>
-                    </UserBlock>
-                        <LogOutButton>Log out</LogOutButton>
-                </HeaderLeftBlock>
+                <HeaderTitle />
+                <Navigation />
+                <HeaderLeftBlock />
             </HeaderContainer>
         </HeaderSection>
     )

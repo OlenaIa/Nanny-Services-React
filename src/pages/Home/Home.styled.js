@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Hero = styled.section`
-  margin: 0 auto;
-  padding: 32px;
-  width: 100%;
-  background-color: var(--color-background-hero-and-icon);
+    margin: 0 auto;
+    padding: 32px;
+    width: 100%;
+    background-color: var(--color-background-hero-and-icon);
 `;
 
 export const HeroContainer = styled.div`
