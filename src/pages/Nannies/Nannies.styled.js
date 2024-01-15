@@ -7,6 +7,9 @@ export const NanniesSection = styled.section`
 `;
 
 export const NanniesContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1184px;
     margin: 0 auto;
 `;
@@ -16,122 +19,121 @@ export const NanniesFilterLabel = styled.label`
     font-weight: 500;
     line-height: 1.29;
     margin-bottom: 32px;
+    align-self: flex-start;
 `;
 
-export const NanniesCard = styled.div`
+export const customStyles = {
+    container: (defaultStyles, state) => ({
+        ...defaultStyles,
+            marginTop: '8px',
+            marginBottom: '8px',
+    }),
+
+    valueContainer: (styles) => ({
+        ...styles,
+        height: '48px',
+        padding: '16px 0px 16px 18px',
+        margin: '0px',
+    }),
+
+    singleValue: (defaultStyles) => ({
+        ...defaultStyles,
+        fontSize: '18px',
+        fontWeight: '500',
+        lineHeight: '1.11',
+        color: 'var(--color-text-white)',
+        margin: '0',
+    }),
+   
+   input: (styles) => ({
+        ...styles,
+        padding: '0px',
+        margin: '0px',
+  }),
+
+    indicatorSeparator: (defaultStyles) => ({
+        ...defaultStyles,
+        backgroundColor: 'transparent',
+    }),
+
+    dropdownIndicator: (defaultStyles) => ({
+        ...defaultStyles,
+        paddingRight: '18px',
+        color: 'var(--color-text-white)',
+    }),
+
+    menu: (defaultStyles) => ({
+        ...defaultStyles,
+        width: '226px',
+        height: '244px',
+        borderRadius: '14px',
+        background: 'white',
+        boxShadow: '0px 20px 69px 0px rgba(0, 0, 0, 0.07)',
+        padding: '14px 72px 18px 18px',
+    }),
+
+    menuList: (base) => ({
+        ...base,
+        padding: '0px',
+        fontSize: '18px',
+        lineHeight: '1.11',
+        fontWeight: '400',
+    }),
+    
+    option: (defaultStyles, state) => ({
+        ...defaultStyles,
+        fontSize: '18px',
+        lineHeight: '1.11',
+        fontWeight: '400',
+        letterSpacing: '-0.17px',
+        color: state.isSelected ? 'var(--color-text-black)' : 'rgba(17, 16, 28, 0.30)',
+        backgroundColor: 'transparent', // Стилізація фона активної опції и ховера
+        cursor: 'pointer',
+        padding: '0px',
+        margin: '0px',
+
+        '&:not(:last-child)': {
+            marginBottom: '12px'
+        },
+    }),
+
+    control: (defaultStyles) => ({
+        ...defaultStyles,
+        cursor: 'pointer',
+        appearance: 'none', // Removing default appearance
+        WebkitAppearance: 'none',
+        MozAppearance: 'none',
+        border: 'none',
+        outline: 'none',
+        fontSize: '18px',
+        fontWeight: '500',
+        lineHeight: '1.11',
+        width: '226px',
+        height: '48px',
+        borderRadius: '14px',
+        background: 'var(--color-background-accent)',
+        color: 'var(--color-text-white)',
+    }),
+};
+
+export const NanniesList = styled.ul`
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    max-width: 1184px;
-    min-height: 318px;
-    padding: 24px;
-    border-radius: 24px;
-    background-color: var(--color-background-hero-and-icon);
-`;
-
-export const NanniesPhoto = styled.div`
-    width: 120px;
-    height: 120px;
-    flex-shrink: 0;
-    padding: 12px;
-    border-radius: 30px;
-    border: 2px solid var(--color-background-avatar);
-`;
-
-export const PhotoWrap = styled.div`
-    width: 96px;
-    height: 96px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    overflow: hidden;
-`;
-
-export const CardHeaderWrap = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 946px;
-    margin-bottom: 8px;
-`;
-
-export const CardHeaderText = styled.p`
-color: var(--color-text-filter);
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-`;
-
-export const CardHeaderList = styled.ul`
-    display: flex;
+    flex-direction: column;
     gap: 32px;
+    margin-bottom: 64px;
+`;
+
+export const LoadMoreButton = styled.button`
+    display: inline-flex;
+    padding: 14px 40px;
+    justify-content: center;
     align-items: center;
-    color: var(--color-text-black);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background: var(--color-background-accent);
+    color: var(--color-text-white);
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5;
-`;
-
-export const CardHeaderItem = styled.li`
-    position: relative;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-
-    &:not(:first-child) {
-        &:before {
-        position: absolute;
-        top: 4px;
-        left: -16px;
-        display: block;
-        height: 16px;
-        width: 1px;
-        background-color: rgba(17, 16, 28, 0.20);
-        content: '';
-    }}
-`;
-
-export const CardHeaderSvg = styled.svg`
-    width: ${props => props.size || '16px'};
-    height: ${props => props.size || '16px'}; 
-    stroke: ${props => props.color || 'var(--color-text-black)'};
-    fill: ${props => props.color || 'transparent'};
-`;
-
-export const Price = styled.span`
-    color: var(--color-text-price);
-`;
-
-export const NannyName = styled.h3`
-    color: var(--color-text-black);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1;
-    margin-bottom: 24px;
-`;
-
-export const NannyDataList = styled.ul`
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-`;
-
-export const NannyDataItem = styled.li`
-    padding: 8px 16px;
-    border-radius: 24px;
-    background-color: var(--color-background-primary);
-    color: var(--color-text-filter);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-`;
-
-export const NannyDataSpan = styled.span`
-    color: var(--color-text-black);
-`;
-
-export const NannyDescription = styled.p`
-    font-size: 16px;
-    margin-bottom: 14px;
+    letter-spacing: -0.16px;
 `;
