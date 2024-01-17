@@ -1,13 +1,29 @@
 {
   "files": {
-    "main.css": "/Nanny-Services-React/static/css/main.7acaea2f.css",
-    "main.js": "/Nanny-Services-React/static/js/main.07d3183d.js",
+    "main.css": "/Nanny-Services-React/static/css/main.1909ce6f.css",
+    "main.js": "/Nanny-Services-React/static/js/main.68460d2d.js",
+    "static/js/422.e38eb86d.chunk.js": "/Nanny-Services-React/static/js/422.e38eb86d.chunk.js",
+    "static/js/830.5eb92fd8.chunk.js": "/Nanny-Services-React/static/js/830.5eb92fd8.chunk.js",
+    "static/js/395.59b0cc2c.chunk.js": "/Nanny-Services-React/static/js/395.59b0cc2c.chunk.js",
+    "static/js/58.15643b1c.chunk.js": "/Nanny-Services-React/static/js/58.15643b1c.chunk.js",
+    "static/media/hero.png": "/Nanny-Services-React/static/media/hero.dc7943029b975ffc9a12.png",
+    "static/media/HelveticaNeueBold.otf": "/Nanny-Services-React/static/media/HelveticaNeueBold.1baa6c20d3e22be14c0a.otf",
+    "static/media/HelveticaNeueMedium.otf": "/Nanny-Services-React/static/media/HelveticaNeueMedium.38884ffafe8888205009.otf",
+    "static/media/Helvetica Neue Regular.otf": "/Nanny-Services-React/static/media/Helvetica Neue Regular.bd3da27cf0bacbc40bbe.otf",
+    "static/media/Helvetica Neue Regular.ttf": "/Nanny-Services-React/static/media/Helvetica Neue Regular.c23a7e588ce7d324283f.ttf",
+    "static/media/HelveticaNeue Medium.ttf": "/Nanny-Services-React/static/media/HelveticaNeue Medium.64ab5024acf8e1619abc.ttf",
+    "static/media/no-image.png": "/Nanny-Services-React/static/media/no-image.00f7577e13b32bf7be4f.png",
+    "static/media/sprite.svg": "/Nanny-Services-React/static/media/sprite.5f690ba6301f4f1787dd9e9836911761.svg",
     "index.html": "/Nanny-Services-React/index.html",
-    "main.7acaea2f.css.map": "/Nanny-Services-React/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/Nanny-Services-React/static/js/main.07d3183d.js.map"
+    "main.1909ce6f.css.map": "/Nanny-Services-React/static/css/main.1909ce6f.css.map",
+    "main.68460d2d.js.map": "/Nanny-Services-React/static/js/main.68460d2d.js.map",
+    "422.e38eb86d.chunk.js.map": "/Nanny-Services-React/static/js/422.e38eb86d.chunk.js.map",
+    "830.5eb92fd8.chunk.js.map": "/Nanny-Services-React/static/js/830.5eb92fd8.chunk.js.map",
+    "395.59b0cc2c.chunk.js.map": "/Nanny-Services-React/static/js/395.59b0cc2c.chunk.js.map",
+    "58.15643b1c.chunk.js.map": "/Nanny-Services-React/static/js/58.15643b1c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.1909ce6f.css",
+    "static/js/main.68460d2d.js"
   ]
 }
