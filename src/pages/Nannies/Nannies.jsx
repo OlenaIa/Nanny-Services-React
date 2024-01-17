@@ -3,20 +3,18 @@ import {
     NanniesSection,
     NanniesContainer,
     NanniesFilterLabel,
-    
+
     customStyles,
     LoadMoreButton,
     NanniesList
 } from "./Nannies.styled";
-import noPhoto from '../../assets/no-image.png';
-import sprite from '../../assets/sprite.svg';
 import { useState } from 'react';
 import { NanniesCard } from 'components/NanniesCard/NanniesCard';
 
 const Nannies = () => {
     const [filter, setFilter] = useState({ value: 'a to z', label: 'A to Z' });
     console.log('filter =>', filter);
-    
+
     const options = [
         { value: 'a to z', label: 'A to Z' },
         { value: 'z to a', label: 'Z to A' },
@@ -26,7 +24,7 @@ const Nannies = () => {
         { value: 'not popular', label: 'Not popular' },
         { value: 'all', label: 'Show all' }
     ];
-    
+
     return (
         <NanniesSection>
             <NanniesContainer>
